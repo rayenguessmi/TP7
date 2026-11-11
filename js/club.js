@@ -1,0 +1,13 @@
+console.log("---- Exercice 1 ----");
+const cotisation = 25.5;
+const cotisationReduite = cotisation * 0.85;
+console.log("Cotisation réduite :", cotisationReduite);
+console.log("Cotisation réduite :", cotisationReduite.toFixed(2));
+const saisie = prompt("Votre prénom ?");
+const prenom = saisie.trim();
+const prenomPropre = prenom[0].toUpperCase() + prenom.slice(1).toLowerCase();
+console.log("Prénom : " + prenomPropre);
+// const email = `${prenomPropre}@club.tn`.toLowerCase();
+const email = prenom[0].toUpperCase()+`${prenom.slice(1).toLowerCase()}@club.tn`.toLowerCase();
+console.log("Email : " + email);
+console.log("Contient @ : " + email.includes("@")); 
